@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta de Amor</title>
+    <style>
+        
+        
+        body {
+            font-family: Georgia, serif;
+            background-image: linear-gradient(to right, pink,rgb(196, 113, 127));
+            color: #880e4f;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #ad1457;
+        }
+        p {
+            display: none;
+            font-size: 18px;
+            margin: 20px 0;
+        }
+        button {
+            background-color: #f06292;
+            box-shadow: 5px 5px 2px rgb(153, 67, 81);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #d81b60;
+        }
+    </style>
+</head>
+<body>
+    <h1>MINHA PRINCESA,</h1>
+    
+   
+    <br>
+    <h1>Minha Carta para Ti</h1>
+    <br>
+    <p id="paragraph1">Querida, você é a pessoa mais incrível que já conheci.</p>
+    <p id="paragraph2">Todos os dias ao seu lado são especiais e cheios de amor.</p>
+    <p id="paragraph3">Prometo estar ao seu lado sempre, lhe apoiando e amando.</p>
+    <p id="paragraph4">Que venha muitos anos e decadas de felicidades ao seu lado minha princesa.</p>
+    <button onclick="revealText()">Clique para revelar</button>
+
+    <script>
+        let index = 0;
+        function revealText() {
+            const paragraphs = document.querySelectorAll('p');
+            if (index < paragraphs.length) {
+                paragraphs[index].style.display = 'block';
+                index++;
+            } else {
+                alert('I Love You Forever My Perfect Princess🤍!');
+            }
+        }
+    </script>
+</body>
+</html>
